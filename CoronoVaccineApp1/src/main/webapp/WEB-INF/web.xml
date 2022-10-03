@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	
+	<welcome-file-list>
+		<welcome-file>welcomeurl</welcome-file>
+		<welcome-file>coronaurl</welcome-file>
+		<welcome-file>Corona_Vaccine.html</welcome-file>
+		<welcome-file>corona.jsp</welcome-file>
+		<welcome-file>vaccine.jsp</welcome-file>
+	</welcome-file-list> 
+	 <servlet>
+		<servlet-name>corona</servlet-name>
+		<jsp-file>/WEB-INF/pages/Corona_Vaccine.html</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>corona</servlet-name>
+		<url-pattern>/welcomeurl</url-pattern>
+	</servlet-mapping> 		
+	
+	<servlet>
+		<servlet-name>Vaccine</servlet-name>
+		<servlet-class>com.nt.servlet.CoronVaccineCheck</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Vaccine</servlet-name>
+		<url-pattern>/coronaurl</url-pattern>
+	</servlet-mapping>		
+ 
+</web-app>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Welcome To Login Page</h1>
+	<form action="loginurl" method="Get" onsubmit="validation(this)">
+		UserName : <input type="text" name="uname"/><span id="uname" style="color:red"></span><br><br>
+		PassWord : <input type="password" name="pwd"/><span id="pwd" style="color:red"></span><br><br>
+		<input type="submit" value="Log-In">
+	</form>
+	
+	<script language="JavaScript">
+		function validation(frm){
+			// empty the form validations msg
+			document.getElementById("unameErr").innerHTML="";
+			document.getElementById("pwdErr").innerHTML="";
+			//read form data
+			let name = frm.uname.value;
+			let paswd = frm.pwd.value;
+			// client side validations
+			if(name==""){
+				document.getElementById("uname").InnerHTML="Username is Required";
+			}
+			else if(pwd==""){
+				document.getElementById("uname").InnerHTML="Password is Required";
+			}
+		}// funcation		
+	</script>
+</body>
+</html>

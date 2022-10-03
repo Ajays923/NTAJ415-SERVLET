@@ -1,0 +1,18 @@
+
+<h1 style="color:red;text-align:center">Corona Vaccine Eligibility Check</h1>
+<!-- <form action="http://localhost:2525/CoronoVaccineApp/coronaurl" method="GET" align="center"> -->
+
+<form action="coronaurl" method="POST" name="frm" onsubmit="return validate(this)">
+	PersonName ::<input type="text" name="pname"><span id="pnameErr" style="color:red"></span><br>
+	PersonAddrs ::<input type="text" name="paddrs"><span id="paddrsErr" style="color:red"></span><br>
+	PersonAge ::<input type="text" name="page"><span id="pageErr" style="color:red"></span><br>
+	<input type="submit" value="check Eligibility">
+	<input type="hidden" name="vflag" value="no">
+</form>
+
+<br><br>
+<a href="coronaurl">GetWishMesssage</a>
+
+<script language="JavaScript" src="js/validations.js">
+
+</script>

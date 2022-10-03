@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Html to servlet communication</title>
+</head>
+<body>
+	<h1 style="color:red;text-align:center">Html to Servlet communication using JavaScript</h1>
+	<form name="frm" action="capitalurl" method="Post">
+		Select Country :: <select name="country" onchange="frm.submit()"> 
+							<option value="-1" selected="selected">--select -- value </option>
+							<option value="0">India</option>
+							<option value="1">Pakistan</option>
+							<option value="2">USA</option>
+							<option value="3">China</option> 
+					</select>
+	</form>	
+	<!-- <script language="JavaScript">
+		function send(){
+			frm.submit(); // submit the request to action url
+		}
+	</script> -->
+</body>
+</html>
