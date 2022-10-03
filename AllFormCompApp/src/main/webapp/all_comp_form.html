@@ -1,0 +1,119 @@
+
+
+<h1 style="color:red;text-align:center">Working with Different types of Form comps</h1>
+
+<form action="formurl" method="GET">
+	
+	<table bgcolor="cyan" align="center" border="1">
+  		<tr>
+    		<td> Person Name :: </td>
+    		<td> <input type="text" name="pname" maxlength="10" required><span style="color:red">*</span></td>
+  		</tr>
+  		<tr>
+    		<td> Person Age :: </td>
+    		<td> <input type="password" name="page" required><span style="color:red">*</span></td>
+  		</tr>
+  		<tr>
+    		<td> Person Addrs :: </td>
+    		<td> <textarea rows="5" cols="20" name="paddrs" maxlength="100" >
+    		</textarea></td>
+  		</tr>
+  		<tr>
+  			<td> Gender :: </td>
+  			<td>
+  				<input type="radio" name="gender" value="M"> Male &nbsp;&nbsp;
+  				<input type="radio" name="gender" value="F" checked> Female &nbsp;&nbsp;
+  			</td> 
+  		</tr>
+  		<tr>
+  			<td> Marital Status:: </td>
+  			<td>
+  				<input type="checkbox" name="ms" value="married"> Married
+  				<!-- <input type="checkbox" name="ms" value="unmarried"> UnMarried -->
+  			</td>	
+  		</tr>
+  		<tr>
+  			<td> Qualification :: </td>
+  			<td>
+  				<select name="qlfy">
+  					<option value="" selected>--select--</option>
+  					<option value="Engineer">B.E/B.Tech</option>
+  					<option value="Arts">BA/MA</option>
+  					<option value="doctor">MBBS</option>
+  					<option value="Accountant">B.Com/M.Com</option>
+  				</select>
+  		</tr>
+  		
+  		<tr>
+  			<td> Language Known:: </td>
+  			<td>
+  				<select name="languages" multiple>
+  					<option value="" selected>--select--</option>
+  					<option value="Marathi">Marathi</option>
+  					<option value="Telugu">Telugu</option>
+  					<option value="hindi">Hindi</option>
+  					<option value="English">English</option>
+  				</select>
+  		</tr>
+  		
+  		<tr>
+  			<td> Hobies:: </td>
+  			<td>
+  			<input type="checkbox" name="hb" value="reading" checked>Reading &nbsp;&nbsp;
+  			<input type="checkbox" name="hb" value="watching">WatchingTV &nbsp;&nbsp;
+  			<input type="checkbox" name="hb" value="playing">Playing &nbsp;&nbsp;
+    		<input type="checkbox" name="hb" value="roaming">Travelling	&nbsp;&nbsp;	
+  			</td>
+  		</tr>
+  	<tr>
+    	<td>D.O.B</td>
+    	<td><input type="date" name="dob"></td>
+  	</tr>
+  	<tr>
+    	<td>Time of Birth</td>
+    	<td><input type="time" name="tob"></td>
+  	</tr>
+  	
+  	<tr>
+    	<td>Month of Birth</td>
+    	<td><input type="month" name="mob"></td>
+  	</tr>
+  	<tr>
+    	<td>Week number name of Birth in DOB year</td>
+    	<td><input type="week" name="wdb"></td>
+  	</tr>
+  	<tr>
+  		<td> Select Fav. Number </td>
+  		<td><input type="range" min="0" max="9" name="favNumber"></td> 
+  	</tr>
+  	<tr>
+    	<td>Phone Number</td>
+    	<td><input type="tel" name="mobileNo"></td>
+  	</tr>
+  	<tr>
+    	<td>email id</td>
+    	<td><input type="email" name="mail"></td>
+  	</tr>
+  	<tr>
+    	<td>Fav color</td>
+    	<td><input type="color" name="favcolor"></td>
+  	</tr>
+  	<tr>
+    	<td>Person Income</td>
+    	<td><input type="number" min="10000" max="1000000" name="income"></td>
+  	</tr>
+  	<tr>
+    	<td>FB url</td>
+    	<td><input type="url" name="furl"></td>
+  	</tr>
+  	<tr>
+    	<td>Fav google search String</td>
+    	<td><input type="search" name="favsearch"></td>
+  	</tr>
+  	<tr>
+    	<td><input type="submit" value="Process Details"></td>
+    	<td><input type="reset" value="Cancel"></td>
+  	</tr>
+</table>
+</form>
+
