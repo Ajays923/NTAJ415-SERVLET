@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MIMEApp</display-name>
+
+
+	<!--Servlet Configuration  -->
+		<servlet>
+			<servlet-name>lc</servlet-name>
+			<servlet-class>com.nt.servlet.DBTestServlet</servlet-class>
+			<init-param>
+				<param-name>driverName</param-name>
+				<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+			</init-param>
+				
+			<init-param>
+				<param-name>url</param-name>
+				<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+			</init-param>	
+			
+			<init-param>
+				<param-name>dbuser</param-name>
+				<param-value>system</param-value>
+			</init-param>
+			
+			<init-param>
+				<param-name>dbpwd</param-name>
+				<param-value>Admin</param-value>
+			</init-param>
+			
+			<load-on-startup>1</load-on-startup>
+		</servlet>
+	<!-- Servlet mapping/linking with Url-->
+		<servlet-mapping>
+			<servlet-name>lc</servlet-name>
+			<url-pattern>/lcurl</url-pattern>
+		</servlet-mapping>
+
+
+</web-app>
