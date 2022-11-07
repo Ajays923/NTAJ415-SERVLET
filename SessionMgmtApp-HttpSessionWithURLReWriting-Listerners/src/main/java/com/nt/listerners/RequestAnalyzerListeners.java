@@ -25,7 +25,7 @@ public class RequestAnalyzerListeners implements ServletRequestListener {
 				end=System.currentTimeMillis();
 				// get HttpServletRequest object
 				HttpServletRequest req = (HttpServletRequest) sre.getServletRequest();
-				// get ServletContext object
+				// get ServletContext object ......
 				ServletContext sc = req.getServletContext();
 				sc.log(req. getRequestURI()+" has taken"+(end-start)+" ms time take to proces the request");
 				System.out.println(req.getRequestURI()+" has taken"+(end-start)+" ms time take to process the request");
